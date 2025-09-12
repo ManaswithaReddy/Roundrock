@@ -1,1 +1,6 @@
-beta from salerno
+# from your repo root
+git status           # verify you're in a merge
+git checkout --ours beta.txt   # "ours" = current branch (salerno-conflict-2)
+git add beta.txt
+git commit -m "Resolve conflict: keep salerno version of beta.txt"
+git push origin HEAD:salerno-conflict-2
